@@ -6,7 +6,7 @@ with open('qasa_stockholm.json', 'r') as f:
     load_data = json.load(f)
 
 print(load_data)
-df = json_normalize(load_data['homes'])
+df = json_normalize(load_data['coords']['homes'])
 
 print(df)
 #df = pd.read_json('qasa_stockholm.json', orient='columns')
