@@ -19,6 +19,10 @@ m = gmaps.Map()
 df['latitude'] = df['latitude'].astype(float)
 df['longitude'] = df['longitude'].astype(float)
 df['cost'] = df['cost'].astype(float)
-heatmap_layer = gmaps.heatmap_layer(df[['latitude','longitude']], weights=df['cost'],max_intensity=25000, point_radius=5.0)
-m.add_layer(heatmap_layer)
-embed_minimal_html('export.html', views=[m])
+# heatmap_layer = gmaps.heatmap_layer(df[['latitude','longitude']], weights=df['cost'],max_intensity=0, point_radius=5.0)
+# m.add_layer(heatmap_layer)
+# embed_minimal_html('export.html', views=[m])
+
+print(df.sort_values(by='firsthand'))
+
+print(df[df['id'] ==40745])
