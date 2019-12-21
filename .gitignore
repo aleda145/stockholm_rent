@@ -1,3 +1,5 @@
 qasa-env/
 export.html
 .vscode/
+*.txt
+*.csv
